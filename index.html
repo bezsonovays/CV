@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yana Kylymysta</title>
 </head>
+
 <body>
     <!doctype html>
     <html lang="en">
-    
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport"
@@ -19,458 +21,524 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
             integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
             crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://kit.fontawesome.com/9cc780ce61.js" crossorigin="anonymous"></script>
 
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-*
-{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', SansSerif;
-}
 
-body {
-    background-color: lightblue;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-.container{
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    min-height: 1000px;
-    background-color: #fff;
-    margin: 50px;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
-}
-.container .left_Side {
-    position: relative;
-    background-color: #003147;
-    padding: 40px;
-}
-.profileText{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-.profileText .imgBx {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-}
-.profileText .imgBx img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.photo {
-    width: 100%;
-    height: auto;
-}
-.profileText h2 {
-    color: #fff;
-    font-size: 1.5em;
-    margin-top: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    font-weight: 600;
-    line-height: 1.4em;
-}
-.profileText h2 span{
-    font-size: 0.8em;
-    font-weight: 300;
-}
-.contactInfo {
-    padding-top: 40px;
-}
-.title{
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-}
-.contactInfo ul {
-    position: relative;
-}
-.contactInfo ul li {
-    list-style: none;
-    position: relative;
-    margin: 10px 0;
-    cursor: pointer;
-}
-.contactInfo ul li .icon {
-    display: inline-block;
-    width: 30px;
-    font-size: 18px;
-    color: #03a9f4;
-}
-.contactInfo ul li span{
-    color: #fff;
-    font-weight: 300;
-}
-.contactInfo.education li {
-    margin-bottom: 15px;
-}
-.contactInfo.education h5 {
-    color: #03a9f4;
-    font-weight: 500;
-}
-.contactInfo.education h4:nth-child(2) {
-    color: #fff;
-    font-weight: 500;
-}
-.contactInfo.education h4 {
-    color: #fff;
-    font-weight: 300;
-}
-.contactInfo.language .percent {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background-color: #081921;
-    display: block;
-    margin-top: 5px;
-}
-.contactInfo.language .percent div {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #03a9f4;
-}
-.container .right_Side {
-    position: relative;
-    background-color: #fff;
-    padding: 40px;
-}
-.about {
-    margin-bottom: 50px;
-}
-.about:last-child {
-    margin-bottom: 0;
-}
-.title2 {
-    color: #003147;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
-}
-p {
-    color: #081921;
-}
-.about .box {
-    display: flex;
-    flex-direction: row;
-    margin: 20px 0;
-}
-.about .box .year_company {
-    min-width: 150px;
-}
-.about .box .year_company h5 {
-    text-transform: uppercase;
-    color: #848c90;
-    font-weight: 600;
-}
-.about .box .text h4 {
-    text-transform: uppercase;
-    color: #2a7da2;
-    font-size: 16px;
-}
-.skills .box {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-}
-.skills .box h4 {
-    text-transform: uppercase;
-    color: #848c90;
-    font-weight: 500;
-}
-.skills .box .percent {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background-color: #f0f0f0;
-}
-.skills .box .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #03a9f4;
-}
-.interest ul {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-}
-.interest ul li {
-    list-style: none;
-    color: black;
-    font-weight: 500;
-    margin: 10px 0;
-}
-.interest ul li .fa {
-    color: #03a9f4;
-    font-size: 18px;
-    width: 20px;
-}
-@media (max-width: 1000px) {
-    .container {
-        margin: 10px;
-        grid-template-columns: repeat(1,1fr);
-    }
-    .interest ul {
-        grid-template-columns: repeat(2,1fr);
-    }
-}
-@media (max-width: 600px) {
-    .about .box{
-        flex-direction: column;
-    }
-    .about .box .year_company {
-        margin-bottom: 5px;
-    }
-    .interest ul {
-        grid-template-columns: repeat(1,1fr);
-    }
-    .skills .box {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
-.englishw50 {
-    width: 60%;
-}
-.russianw90 {
-    width: 90%;
-}
-.frenchw30{
-    width: 30%;
-}
-.htmlws30 {
-    width: 50%;
-}
-.cssws45 {
-   width: 45%;
-}
-.jsws70 {
-    width: 70%;
-}
-.phws40{
-   width: 40%;
-}
-.ilws60 {
-   width: 60%;
-}
-.adw70 {
-    width: 70%;
-}
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Poppins', SansSerif;
+            }
+
+            body {
+                background-color: lightblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+            }
+
+            .container {
+                position: relative;
+                width: 100%;
+                max-width: 1000px;
+                min-height: 1000px;
+                background-color: #fff;
+                margin: 50px;
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+            }
+
+            .container .left_Side {
+                position: relative;
+                background-color: #003147;
+
+            }
+
+            .left__wrapper {
+                padding: 20px 40px 40px 40px;
+            }
+
+            .profileText {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            }
+
+            .profileText .imgBx {
+                position: relative;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            .profileText .imgBx img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .photo {
+                width: 100%;
+                height: auto;
+            }
+
+            .profileText h2 {
+                color: #fff;
+                font-size: 1.5em;
+                margin-top: 20px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 600;
+                line-height: 1.4em;
+            }
+
+            .profileText h2 span {
+                font-size: 0.8em;
+                font-weight: 300;
+            }
+
+            .contactInfo {
+                padding-top: 40px;
+            }
+
+            .title {
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 600;
+                letter-spacing: 1px;
+                margin-bottom: 20px;
+            }
+
+            .contactInfo ul {
+                position: relative;
+            }
+
+            .contactInfo ul li {
+                list-style: none;
+                position: relative;
+                margin: 10px 0;
+                /* cursor: pointer; */
+            }
+
+            .contactInfo ul li .icon {
+                display: inline-block;
+                width: 30px;
+                font-size: 18px;
+                color: #03a9f4;
+            }
+
+            .contactInfo ul li span,
+            .contactInfo ul li a {
+                color: #fff;
+                font-weight: 300;
+                text-decoration: none;
+            }
+
+            .contactInfo.contactBlock li {
+                margin-bottom: 15px;
+            }
+
+            .contactInfo.contactBlock h5 {
+                color: #03a9f4;
+                font-weight: 500;
+            }
+
+            .contactInfo.contactBlock h4:nth-child(2),
+            .contactInfo.contactBlock h4:nth-child(2) a {
+                color: #fff;
+                font-weight: 500;
+            }
+
+            .contactInfo.contactBlock h4 {
+                color: #fff;
+                font-weight: 300;
+            }
+
+            .contactInfo.language .percent {
+                position: relative;
+                width: 100%;
+                height: 6px;
+                background-color: #081921;
+                display: block;
+                margin-top: 5px;
+            }
+
+            .contactInfo.language .percent div {
+                position: relative;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background-color: #03a9f4;
+            }
+
+            .container .right_Side {
+                position: relative;
+                background-color: #fff;
+                padding: 40px;
+            }
+
+            .about {
+                margin-bottom: 50px;
+            }
+
+            .about:last-child {
+                margin-bottom: 0;
+            }
+
+            .title2 {
+                color: #003147;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 10px;
+            }
+
+            p {
+                color: #081921;
+            }
+
+            .about .box {
+                display: flex;
+                flex-direction: row;
+                margin: 20px 0;
+            }
+
+            .about .box .year_company {
+                min-width: 150px;
+            }
+
+            .about .box .year_company h5 {
+                text-transform: uppercase;
+                color: #848c90;
+                font-weight: 600;
+            }
+
+            .about .box .text h4 {
+                text-transform: uppercase;
+                color: #2a7da2;
+                font-size: 16px;
+            }
+
+            .skills .box {
+                position: relative;
+                width: 100%;
+                display: grid;
+                grid-template-columns: 150px 1fr;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .skills .box h4 {
+                text-transform: uppercase;
+                color: #848c90;
+                font-weight: 500;
+            }
+
+            .skills .box .percent {
+                position: relative;
+                width: 100%;
+                height: 10px;
+                background-color: #f0f0f0;
+            }
+
+            .skills .box .percent div {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                background-color: #03a9f4;
+            }
+
+            .interest ul {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            .interest ul li {
+                list-style: none;
+                color: black;
+                font-weight: 500;
+                margin: 10px 0;
+            }
+
+            .interest ul li .fa {
+                color: #03a9f4;
+                font-size: 18px;
+                width: 20px;
+            }
+
+            @media (max-width: 1000px) {
+                .container {
+                    margin: 10px;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .interest ul {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+
+            @media (max-width: 600px) {
+                .about .box {
+                    flex-direction: column;
+                }
+
+                .about .box .year_company {
+                    margin-bottom: 5px;
+                }
+
+                .interest ul {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                .skills .box {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+
+            .englishw50 {
+                width: 55%;
+            }
+
+            .frenchw30 {
+                width: 30%;
+            }
+
+            .htmlws99 {
+                width: 99%;
+            }
+
+            .jsws70 {
+                width: 70%;
+            }
+
+            .db50 {
+                width: 50%;
+            }
+
+            .react40 {
+                width: 40%;
+            }
+
+            .node25 {
+                width: 25%;
+            }
+
+            .about .box .year_company h5 a {
+                color: #3a3a3a;
+                font-weight: 600;
+                text-decoration: none;
+            }
+
+            .social-icon a i {
+                color: #fff;
+            }
+
+            .block {
+                display: block !important;
+            }
         </style>
     </head>
-    
+
     <body>
         <div class="container">
             <div class="left_Side">
-                <div class="profileText">
-                    <div class="imgBx">
-                        <img class="photo" src="images/image.jpg">
+                <div class="imgBx">
+                    <img class="photo" src="./main__banner2.jpg">
+                </div>
+                <div class="left__wrapper">
+                    <div class="profileText">
+
+                        <h2>Yana Kylymysta<br><span>Frond-end Developer</span> </h2>
                     </div>
-                    <br>
-                    <h2>Ekaterina Antonova <br><span>Web Developer</span> </h2>
+
+                    <div class="contactInfo">
+                        <h3 class="title">Contact Info</h3>
+                        <ul>
+                            <li>
+                                <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+                                <a class="text" href="tel:+380930729141">+38 (093) 072 91 41</a>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+                                <a class="text" href="mailto:zozulyaweb@gmail.com">zozulyaweb@gmail.com</a>
+                            </li>
+                            <li>
+                                <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                                <span class="text">9 Natalia Uzhviy Street, Kyiv, 02000, Ukraine</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="contactInfo aboutme contactBlock">
+                        <h3 class="title">About me</h3>
+                        <div class="social-icon">
+                            <a href="https://www.facebook.com/profile.php?id=100007729217954" target="_blank"><i
+                                    class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                            <!-- <a href="" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a> -->
+                        </div>
+
+
+                        <ul>
+                            <li>
+                                <h5>Date of birth</h5>
+                                <h4>5th April 1990</h4>
+                            </li>
+                            <li>
+                                <h5>Marital status</h5>
+                                <h4>married</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contactInfo education contactBlock">
+                        <h3 class="title">Education</h3>
+                        <ul>
+                            <li>
+                                <h5>2021</h5>
+                                <h4><a href="https://owu.com.ua/kurs-javascript" target="_blank">JavaScript Complex
+                                        course</a></h4>
+                                <h4>OktenWeb</h4>
+                            </li>
+                            <li>
+                                <h5>2013</h5>
+                                <h4>Website development course</h4>
+                                <h4>Study24 </h4>
+                            </li>
+                            <li>
+                                <h5>2007 - 2013</h5>
+
+                                <h4>Automated technological process management, master's degree with honors</h4>
+                                <h4>Kyiv National University of Construction and Architecture</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="contactInfo language">
+                        <h3 class="title">Languages</h3>
+
+                        <ul>
+                            <li>
+                                <span class="text">Ukrainian</span>
+                                <span class="percent">
+                                    <div></div>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="text">English</span>
+                                <span class="percent ">
+                                    <div class="englishw50"></div>
+                                </span>
+                            </li>
+                        </ul>
+
+                    </div>
                 </div>
-    
-                <div class="contactInfo">
-                    <h3 class="title">Contact Info</h3>
-                    <ul>
-                        <li>
-                            <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-                            <span class="text">+1 234 567 89</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-                            <span class="text">jon_doe@example.com</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-                            <span class="text">www.mywebsite.com</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-linkedin" aria-hidden="true"></i></span>
-                            <span class="text">www.linkedin/me</span>
-                        </li>
-                        <li>
-                            <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-                            <span class="text">Moscow, Russia</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contactInfo education">
-                    <h3 class="title">Education</h3>
-                    <ul>
-                        <li>
-                            <h5>2010 - 2013</h5>
-                            <h4>Master Degree in Computer Science</h4>
-                            <h4>University Name</h4>
-                        </li>
-                        <li>
-                            <h5>2007 - 2013</h5>
-                            <h4>Bachelor Degree Computer Science</h4>
-                            <h4>University Name</h4>
-                        </li>
-                        <li>
-                            <h5>1997 - 2007</h5>
-                            <h4>Matriculation </h4>
-                            <h4>University Name</h4>
-                        </li>
-                    </ul>
-                </div>
-                <div class="contactInfo language">
-                    <h3 class="title">Languages</h3>
-                    <ul>
-                        <li>
-                            <span class="text">English</span>
-                            <span class="percent">
-                                <div data-language="english"></div>
-                            </span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span class="text">Russian</span>
-                            <span class="percent">
-                                <div data-language="russian"></div>
-                            </span>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li>
-                            <span class="text">French</span>
-                            <span class="percent">
-                                <div data-language="french"></div>
-                            </span>
-                        </li>
-                    </ul>
-                </div>
+
             </div>
             <div class="right_Side">
                 <div class="about">
                     <h2 class="title2">Profile</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat.
-                        <br> <br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                        nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.
+                    <p>I have the 7-years of experience as a website development specialist and a 1-year as a Front-end
+                        developer.</p> <br>
+                    <p>Main technologies worked with and prefer to develop - React, Node.js</p> <br>
+                    <p>While programming, the most interesting for me is to do new tasks, learn technologies and search
+                        for the most appropriate solutions. For now my main goals is to develop my skills in
+                        architecture and applications structure, writing readable efficient code and creating useful,
+                        multifunctional application.
                     </p>
                 </div>
                 <div class="about">
                     <h2 class="title2">Experience</h2>
                     <div class="box">
                         <div class="year_company">
-                            <h5>2020 - Present</h5>
-                            <h5>Company Name</h5>
+                            <h5>2014 - Present</h5>
+                            <h5><a href="https://www.tui.ua/" target="_blank">TUI</a> Tour Operator</h5>
                         </div>
                         <div class="text">
-                            <h4>Senior UX Developer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                            <h4>specialist in working with websites</h4>
+                            <h4>senior specialist in working with websites, 2016</h4>
+                            <p>- Updating content on company websites</p>
+                            <p>- Landing Pages creation</p>
+                            <p>- Development and implementation of new features</p>
                         </div>
                     </div>
-    
-                    <div class="box">
+
+                    <!-- <div class="box">
                         <div class="year_company">
-                            <h5>2018 - 2020</h5>
-                            <h5>Company Name</h5>
+                            <h5>2012 - 2013</h5>
+                            <h5>ДУ «Науково-дослідний інститут промислової безпеки та охорони праці»</h5>
                         </div>
                         <div class="text">
-                            <h4>UX Developer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
+                            <h4>провідний інженер</h4>
+
                         </div>
-                    </div>
-    
-                    <div class="box">
-                        <div class="year_company">
-                            <h5>2016 - 2018</h5>
-                            <h5>Company Name</h5>
-                        </div>
-                        <div class="text">
-                            <h4>Junior UX Developer</h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                                labore et dolore magna aliqua.</p>
-                        </div>
-                    </div>
+                    </div> -->
+
                 </div>
                 <div class="about skills">
                     <h2 class="title2">Professionals skills</h2>
-                    <div class="box">
-                        <h4>HTML</h4>
+                    <div class="box block">
+                        <h4>HTML5, CSS3, SCSS, Bootstrap, BEM, Adaptive and cross-browser layout</h4>
                         <div class="percent">
-                            <div data-knowledge="html"></div>
+                            <div class="htmlws99"></div>
                         </div>
                     </div>
-                    <div class="box">
-                        <h4>CSS</h4>
+                    <div class="box block">
+                        <h4>Javascript, ES6, Rest/API</h4>
                         <div class="percent">
-                            <div data-knowledge="css"></div>
+                            <div class="jsws70"> </div>
                         </div>
                     </div>
-                    <div class="box">
-                        <h4>JavaScript</h4>
+
+                    <div class="box block">
+                        <h4>MongoDB, MySQL</h4>
                         <div class="percent">
-                            <div data-knowledge="js"></div>
+                            <div class="db50"></div>
                         </div>
                     </div>
-                    <div class="box">
-                        <h4>Photoshop</h4>
+                    <div class="box block">
+                        <h4>React </h4>
                         <div class="percent">
-                            <div data-knowledge="photoshop"></div>
+                            <div class="react40"></div>
                         </div>
                     </div>
-                    <div class="box">
-                        <h4>Illustrator</h4>
+                    <div class="box block">
+                        <h4>Node.js</h4>
                         <div class="percent">
-                            <div data-knowledge="illustrator""></div>
+                            <div class="node25"></div>
+                        </div>
                     </div>
+
                 </div>
-                <div class=" box">
-                                <h4>Adobe XD</h4>
-                                <div class="percent">
-                                    <div data-knowledge="adobexd"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="about interest">
-                            <h2 class="title2">Interests</h2>
-                            <ul>
-                                <li><i class="fa fa-book" aria-hidden="true"></i> Reading</li>
-                                <li><i class="fa fa-gamepad" aria-hidden="true"></i> Gaming</li>
-                                <li><i class="fa fa-cutlery" aria-hidden="true"></i> Cooking</li>
-                                <li><i class="fa fa-microphone" aria-hidden="true"></i> Singing</li>
-                            </ul>
-                        </div>
-    
-    
-                    </div>
+                <div class="about interest">
+                    <h2 class="title2">Interests</h2>
+                    <ul>
+
+                        <li><i class="fa fa-solid fa-person-running"></i> Run</li>
+                        <li><i class="fa fa-paint-brush" aria-hidden="true"></i> Drawing</li>
+                        <li><i class="fa fa-book" aria-hidden="true"></i> Psychology</li>
+
+                    </ul>
                 </div>
+
+
+            </div>
+        </div>
     </body>
-    
+
     </html>
 </body>
+
 </html>
